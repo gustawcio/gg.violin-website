@@ -1,0 +1,101 @@
+.neon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    /* border: 4px solid yellow; */
+    border-radius: 15px;
+    padding: 5px 15px;
+    /* box-shadow: 0 0 8px 2px white, 0 0 20px 2px yellow, 0 0 25px 2px white; */
+    /* animation: neon 5s 2s infinite; */
+    transition: .5s;
+
+}
+
+.neon__word{
+    padding: 0 2em;
+}
+
+.neon__letter {
+    display: inline-block;
+    color: yellow;
+    font-size: 8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 0 0 8px white, 0 0 20px yellow, 0 0 25px white;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+}
+
+.broken {
+    /* padding: 9px; */
+    /* display: block; */
+    transform: rotate(20deg) translateY(10%);
+    animation: neon 5s 2s infinite;
+}
+
+.off {
+    opacity: 0;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 1;
+    }
+
+    4% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: .5;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    18% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    28% {
+        opacity: .5;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0;
+    }
+
+    63% {
+        opacity: 0;
+    }
+
+    64% {
+        opacity: 1;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .neon {
+      display: none;
+    }
+  }
